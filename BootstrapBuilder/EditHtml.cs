@@ -52,7 +52,7 @@ namespace BootstrapBuilder
                 text = File.ReadAllText(HTMLPath);
                 DataSlide = DataSlide.Replace("NextSlideNum", NextSlideNum.ToString());
                 text = text.Replace("<!--AddDataSlide-->", DataSlide);//מוסיף סליידר
-                text = text.Replace("<!--AddPhoto-->", HtmlAddPhoho);//מוסיף תמונה
+                text = text.Replace("<!--AddPhoto-->", HtmlAddPhoho);//מוסיף תמונההה
             }
             File.WriteAllText(HTMLPath, text);
         }
