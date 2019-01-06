@@ -13,7 +13,7 @@ namespace BootstrapBuilder
     public partial class Form1 : Form
     {
         public Form1()
-        {
+        {            
             InitializeComponent();
             HTMLPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             HTMLPath = Path.GetFullPath(Path.Combine(HTMLPath, @"..\..\")) + @"\WebTemplate01\index.html";
@@ -40,9 +40,7 @@ namespace BootstrapBuilder
             string PhotoURL= "https://www.akc.org/wp-content/themes/akc/component-library/assets/img/welcome.jpg";
             string Title = "Title";
             string Description= "Description";
-            Dialog.InputBox("Add Photo", "URL", ref PhotoURL);
-            Dialog.InputBox("Add Title", "Title", ref Title);
-            Dialog.InputBox("Add Description", "Description", ref Description);
+            Dialog.MultiInputBox("Select Url", ref PhotoURL, ref Title, ref Description);
             EditHtml.AddPhoto(PhotoURL, HTMLPath,Title,Description);
         }
 
@@ -51,6 +49,32 @@ namespace BootstrapBuilder
             //HTMLPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             //HTMLPath = Path.GetFullPath(Path.Combine(HTMLPath, @"..\..\")) + @"\WebTemplate01\index.html";
         }
+
+        private void SelectWeb_Click(object sender, EventArgs e)
+        {
+            string Web = ((PictureBox)sender).Name;
+            Dialog.Msg(Web);
+        }
+
+        private void btnContinue_Click(object sender, EventArgs e)
+        {
+            if (!rbSelectedBoot01.Checked && !rbSelectedBoot02.Checked)
+            {
+                Dialog.Error("Select WebPage.");
+            }
+            else
+            {
+                SelectWebPanel.Visible = false;
+                EditPanel.Visible = true;
+            }
+        }
+
+        private void OnFormLoad(object sender, EventArgs e)
+        {
+            EditPanel.Visible = false;
+        }
+
+
 
         //public void SelectFolder_Click(object sender, EventArgs e)
         //{

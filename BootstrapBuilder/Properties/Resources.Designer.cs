@@ -61,6 +61,26 @@ namespace BootstrapBuilder.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Boot01 {
+            get {
+                object obj = ResourceManager.GetObject("Boot01", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Boot02 {
+            get {
+                object obj = ResourceManager.GetObject("Boot02", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to           &lt;li data-target=&quot;#carouselExampleIndicators&quot; data-slide-to=&quot;Num&quot;&gt;&lt;/li&gt;
         ///	&lt;!--AddDataSlide--&gt;.
         /// </summary>
@@ -82,8 +102,8 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized string similar to           &lt;div class=&quot;carousel-item&quot; style=&quot;background-image: url(&apos;http://placehold.it/1900x1080&apos;)&quot;&gt;
         ///            &lt;div class=&quot;carousel-caption d-none d-md-block&quot;&gt;
-        ///              &lt;h3&gt;Second Slide&lt;/h3&gt;
-        ///              &lt;p&gt;This is a description for the second slide.&lt;/p&gt;
+        ///              &lt;h3&gt;Title&lt;/h3&gt;
+        ///              &lt;p&gt;Des&lt;/p&gt;
         ///            &lt;/div&gt;
         ///          &lt;/div&gt;
         ///          &lt;!--AddPhoto--&gt;
