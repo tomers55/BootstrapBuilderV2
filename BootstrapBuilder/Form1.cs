@@ -38,8 +38,12 @@ namespace BootstrapBuilder
         private void btnURLPhoto_Click(object sender, EventArgs e)
         {
             string PhotoURL= "https://www.akc.org/wp-content/themes/akc/component-library/assets/img/welcome.jpg";
+            string Title = "Title";
+            string Description= "Description";
             Dialog.InputBox("Add Photo", "URL", ref PhotoURL);
-            EditHtml.AddPhoto(PhotoURL, HTMLPath);
+            Dialog.InputBox("Add Title", "Title", ref Title);
+            Dialog.InputBox("Add Description", "Description", ref Description);
+            EditHtml.AddPhoto(PhotoURL, HTMLPath,Title,Description);
         }
 
         private void SelectFolder_Click(object sender, EventArgs e)

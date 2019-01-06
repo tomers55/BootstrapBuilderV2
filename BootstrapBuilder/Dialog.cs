@@ -12,9 +12,9 @@ namespace BootstrapBuilder
 {
     static class Dialog
     {
-        public static void Msg(string x)
+        public static void Msg(object x)
         {
-            MessageBox.Show(x, "Message", MessageBoxButtons.OK);
+            MessageBox.Show(x.ToString(), "Message", MessageBoxButtons.OK);
         }
 
         public static void Error(string x)
