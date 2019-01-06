@@ -1,0 +1,1 @@
+          <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
