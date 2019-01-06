@@ -50,7 +50,7 @@
             // 
             this.btnURLPhoto.Location = new System.Drawing.Point(20, 16);
             this.btnURLPhoto.Name = "btnURLPhoto";
-            this.btnURLPhoto.Size = new System.Drawing.Size(90, 45);
+            this.btnURLPhoto.Size = new System.Drawing.Size(112, 41);
             this.btnURLPhoto.TabIndex = 4;
             this.btnURLPhoto.Text = "URL Photo";
             this.btnURLPhoto.UseVisualStyleBackColor = true;
