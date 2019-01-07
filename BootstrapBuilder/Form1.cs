@@ -9,7 +9,7 @@ using System.Security.Permissions;
 
 namespace BootstrapBuilder
 {
-    public partial class Form1 : Form
+    public partial class Form1 : MetroFramework.Forms.MetroForm
     {
         public Form1()
         {            
@@ -45,7 +45,7 @@ namespace BootstrapBuilder
 
         private void SelectFolder_Click(object sender, EventArgs e)
         {            
-            EditHtml.EditTitle(tbTitle.Text, HTMLPath);
+
         }
 
         private void SelectWeb_Click(object sender, EventArgs e)
@@ -56,49 +56,23 @@ namespace BootstrapBuilder
 
         private void btnContinue_Click(object sender, EventArgs e)
         {
-            if (!rbSelectedBoot01.Checked && !rbSelectedBoot02.Checked)
-            {
-                Dialog.Error("Select WebPage.");
-            }
-            else
-            {
-                SelectWebPanel.Visible = false;
-                EditPanel.Visible = true;
-            }
+
         }
 
         private void OnFormLoad(object sender, EventArgs e)
         {
-            EditPanel.Visible = false;
-            tbTitle.Text = EditHtml.GetTitle(HTMLPath);
+
         }
 
-
-
-        //public void SelectFolder_Click(object sender, EventArgs e)
-        //{
-        //    using (var fbd = new FolderBrowserDialog())
-        //    {
-        //        DialogResult result = fbd.ShowDialog();
-        //        if (result == DialogResult.OK)
-        //        {
-        //            HTMLPath = fbd.SelectedPath.ToString();
-        //        }
-        //        else { return; }
-        //    }
-        //    string lastFolderName = Path.GetFileName(Path.GetDirectoryName(HTMLPath + @"\"));
-        //    tbFilesList.Text ="- "+ lastFolderName + "\r\n";
-        //    DirectoryInfo d = new DirectoryInfo(HTMLPath);//Assuming Test is your Folder
-        //    FileInfo[] Files = d.GetFiles("*.html"); //Getting Text files
-        //    FileInfo[] AllFiels = d.GetFiles("*.*");
-        //    foreach (FileInfo file in AllFiels)
-        //    {
-        //        tbFilesList.Text = tbFilesList.Text + file.Name.ToString() + "\r\n";
-        //    }
-        //    foreach (FileInfo file in Files)
-        //    {
-        //        HTMLPath = d + @"\" + file.Name;         
-        //    }            
-        //}
+        private void MouseOverEvent(object sender, EventArgs e)
+        {
+            PictureBox pic = sender as PictureBox;        
+            pic.BackColor = Color.DarkCyan;
+        }
+        private void MouseLeaveEvent(object sender, EventArgs e)
+        {
+            PictureBox pic = sender as PictureBox;
+            pic.BackColor = Color.Transparent;
+        }
     }
 }
