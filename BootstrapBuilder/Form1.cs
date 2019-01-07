@@ -3,7 +3,6 @@ using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
 using Microsoft.VisualBasic;
-//using System.Windows.Forms;
 using System.Drawing;
 using System.Reflection;
 using System.Security.Permissions;
@@ -45,36 +44,8 @@ namespace BootstrapBuilder
         }
 
         private void SelectFolder_Click(object sender, EventArgs e)
-        {
-            Killenvent(sender,e);
-        }
-        public void Killenvent(object sender, System.EventArgs e)
-        {
-            Process[] procsChrome = Process.GetProcessesByName("chrome");
-
-            if (procsChrome.Length <= 0)
-                return null;
-
-            foreach (Process proc in procsChrome)
-            {
-                // the chrome process must have a window 
-                if (proc.MainWindowHandle == IntPtr.Zero)
-                    continue;
-
-                // to find the tabs we first need to locate something reliable - the 'New Tab' button 
-                AutomationElement root = AutomationElement.FromHandle(proc.MainWindowHandle);
-                var SearchBar = root.FindFirst(TreeScope.Descendants, new PropertyCondition(AutomationElement.NameProperty, "Address and search bar"));
-                if (SearchBar != null)
-                {
-                    AutomationPattern[] patterns = SearchBar.GetSupportedPatterns();
-                    if (patterns.Length > 0)
-                    {
-                        ValuePattern val = (ValuePattern)SearchBar.GetCachedPattern(patterns[0]);
-                        if (val.Current.Value.Contains("youtube.com") || val.Current.Value.Contains("youtube.co.uk"))
-                            proc.Close();
-                    }
-                }
-            }
+        {            
+            EditHtml.EditTitle(tbTitle.Text, HTMLPath);
         }
 
         private void SelectWeb_Click(object sender, EventArgs e)
@@ -99,6 +70,7 @@ namespace BootstrapBuilder
         private void OnFormLoad(object sender, EventArgs e)
         {
             EditPanel.Visible = false;
+            tbTitle.Text = EditHtml.GetTitle(HTMLPath);
         }
 
 
