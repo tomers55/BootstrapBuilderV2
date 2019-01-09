@@ -22,6 +22,8 @@ namespace BootstrapBuilder
             MessageBox.Show(x, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        
+
         public static DialogResult InputBox(string title, string promptText, ref string value)
         {
             Form form = new Form();
@@ -127,6 +129,5 @@ namespace BootstrapBuilder
             dValue = textBoxDes.Text;
             return dialogResult;
         }
-
     }
 }

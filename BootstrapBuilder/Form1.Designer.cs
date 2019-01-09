@@ -32,13 +32,15 @@
             this.btnURLPhoto = new System.Windows.Forms.Button();
             this.RunHtml = new System.Windows.Forms.Button();
             this.SelectFolder = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // btnURLPhoto
             // 
-            this.btnURLPhoto.Location = new System.Drawing.Point(1193, 78);
+            this.btnURLPhoto.Location = new System.Drawing.Point(883, 92);
             this.btnURLPhoto.Name = "btnURLPhoto";
             this.btnURLPhoto.Size = new System.Drawing.Size(25, 25);
             this.btnURLPhoto.TabIndex = 4;
@@ -48,7 +50,7 @@
             // 
             // RunHtml
             // 
-            this.RunHtml.Location = new System.Drawing.Point(1193, 49);
+            this.RunHtml.Location = new System.Drawing.Point(883, 63);
             this.RunHtml.Name = "RunHtml";
             this.RunHtml.Size = new System.Drawing.Size(25, 23);
             this.RunHtml.TabIndex = 1;
@@ -59,43 +61,58 @@
             // 
             // SelectFolder
             // 
-            this.SelectFolder.Location = new System.Drawing.Point(1162, 49);
+            this.SelectFolder.Location = new System.Drawing.Point(852, 63);
             this.SelectFolder.Name = "SelectFolder";
             this.SelectFolder.Size = new System.Drawing.Size(25, 23);
             this.SelectFolder.TabIndex = 0;
             this.SelectFolder.Text = "→";
             this.SelectFolder.UseVisualStyleBackColor = true;
-            this.SelectFolder.Click += new System.EventHandler(this.SelectFolder_Click);
             // 
-            // pictureBox1
+            // pictureBox3
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 16);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.MouseLeave += new System.EventHandler(this.MouseLeaveEvent);
-            this.pictureBox1.MouseHover += new System.EventHandler(this.MouseOverEvent);
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(23, 85);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.MouseLeave += new System.EventHandler(this.MouseLeaveEvent);
+            this.pictureBox3.MouseHover += new System.EventHandler(this.MouseOverEvent);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(436, 319);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.MouseHover += new System.EventHandler(this.MouseOverEvent);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1237, 648);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(931, 523);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.btnURLPhoto);
             this.Controls.Add(this.SelectFolder);
             this.Controls.Add(this.RunHtml);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
+            this.Style = MetroFramework.MetroColorStyle.Yellow;
+            this.Text = "BootStrapBuilder";
+            this.TextAlign = MetroFramework.Forms.MetroFormTextAlign.Center;
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.TransparencyKey = System.Drawing.SystemColors.InactiveBorder;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.OnFormLoad);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -105,7 +122,8 @@
         private System.Windows.Forms.Button btnURLPhoto;
         private System.Windows.Forms.Button RunHtml;
         private System.Windows.Forms.Button SelectFolder;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

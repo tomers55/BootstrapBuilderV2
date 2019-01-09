@@ -16,9 +16,25 @@ namespace BootstrapBuilder
             InitializeComponent();
             HTMLPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             HTMLPath = Path.GetFullPath(Path.Combine(HTMLPath, @"..\..\")) + @"\WebTemplate01\index.html";
-        }
+        }     
         string HTMLPath;
 
+        private void OnFormLoad(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2();
+            f2.Hide();
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            var window = MessageBox.Show("Are you sure to close this program ?", "BootStarpBuilder", MessageBoxButtons.YesNo);
+            if (window == DialogResult.Yes)                
+                System.Windows.Forms.Application.ExitThread();
+            else
+                e.Cancel = true;
+        }
+        //icons: https://www.flaticon.com/search?word=line
+        //-----------------------------------------------------------------------------------------------------//
         public void RunHtml_Click(object sender, EventArgs e)
         {
             if (HTMLPath != null)
@@ -27,11 +43,6 @@ namespace BootstrapBuilder
             }
             else
             { return; }        
-        }
-
-        private void btnImportPhoto_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnURLPhoto_Click(object sender, EventArgs e)
@@ -43,36 +54,21 @@ namespace BootstrapBuilder
             EditHtml.AddPhoto(PhotoURL, HTMLPath,Title,Description);
         }
 
-        private void SelectFolder_Click(object sender, EventArgs e)
-        {            
-
-        }
-
         private void SelectWeb_Click(object sender, EventArgs e)
         {
             string Web = ((PictureBox)sender).Name;
             Dialog.Msg(Web);
         }
 
-        private void btnContinue_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void OnFormLoad(object sender, EventArgs e)
-        {
-
-        }
-
         private void MouseOverEvent(object sender, EventArgs e)
         {
-            PictureBox pic = sender as PictureBox;        
-            pic.BackColor = Color.DarkCyan;
+
         }
         private void MouseLeaveEvent(object sender, EventArgs e)
         {
-            PictureBox pic = sender as PictureBox;
-            pic.BackColor = Color.Transparent;
+
         }
+
+
     }
 }
