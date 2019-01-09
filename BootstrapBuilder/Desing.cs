@@ -18,7 +18,8 @@ namespace BootstrapBuilder
     {    
         public static void showAnimatedPictureBox(PictureBox thePicture)
         {
-            thePicture.Image = Properties.Resources.;
+            thePicture.Image = Properties.Resources.
+            thePicture.Image = Properties.Resources.
             thePicture.Refresh();
             thePicture.Visible = true;
         }
