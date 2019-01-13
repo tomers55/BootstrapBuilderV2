@@ -29,79 +29,100 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.btnURLPhoto = new System.Windows.Forms.Button();
-            this.RunHtml = new System.Windows.Forms.Button();
-            this.SelectFolder = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.typebox = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.playbutton = new System.Windows.Forms.PictureBox();
+            this.image = new System.Windows.Forms.PictureBox();
+            this.tbTitle = new System.Windows.Forms.TextBox();
+            this.lbTitle = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.typebox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.playbutton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.image)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnURLPhoto
+            // typebox
             // 
-            this.btnURLPhoto.Location = new System.Drawing.Point(883, 92);
-            this.btnURLPhoto.Name = "btnURLPhoto";
-            this.btnURLPhoto.Size = new System.Drawing.Size(25, 25);
-            this.btnURLPhoto.TabIndex = 4;
-            this.btnURLPhoto.Text = "URL Photo";
-            this.btnURLPhoto.UseVisualStyleBackColor = true;
-            this.btnURLPhoto.Click += new System.EventHandler(this.btnURLPhoto_Click);
+            this.typebox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.typebox.Image = global::BootstrapBuilder.Properties.Resources.typebox;
+            this.typebox.Location = new System.Drawing.Point(10, 179);
+            this.typebox.Name = "typebox";
+            this.typebox.Size = new System.Drawing.Size(30, 30);
+            this.typebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.typebox.TabIndex = 7;
+            this.typebox.TabStop = false;
+            this.typebox.Click += new System.EventHandler(this.typebox_Click);
+            this.typebox.MouseLeave += new System.EventHandler(this.MouseLeaveEvent);
+            this.typebox.MouseHover += new System.EventHandler(this.MouseOverEvent);
             // 
-            // RunHtml
+            // pictureBox1
             // 
-            this.RunHtml.Location = new System.Drawing.Point(883, 63);
-            this.RunHtml.Name = "RunHtml";
-            this.RunHtml.Size = new System.Drawing.Size(25, 23);
-            this.RunHtml.TabIndex = 1;
-            this.RunHtml.TabStop = false;
-            this.RunHtml.Text = "►";
-            this.RunHtml.UseVisualStyleBackColor = true;
-            this.RunHtml.Click += new System.EventHandler(this.RunHtml_Click);
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox1.Image = global::BootstrapBuilder.Properties.Resources.speed_1_1;
+            this.pictureBox1.Location = new System.Drawing.Point(405, 17);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
             // 
-            // SelectFolder
+            // playbutton
             // 
-            this.SelectFolder.Location = new System.Drawing.Point(852, 63);
-            this.SelectFolder.Name = "SelectFolder";
-            this.SelectFolder.Size = new System.Drawing.Size(25, 23);
-            this.SelectFolder.TabIndex = 0;
-            this.SelectFolder.Text = "→";
-            this.SelectFolder.UseVisualStyleBackColor = true;
+            this.playbutton.Image = global::BootstrapBuilder.Properties.Resources.playbutton;
+            this.playbutton.Location = new System.Drawing.Point(10, 85);
+            this.playbutton.Name = "playbutton";
+            this.playbutton.Size = new System.Drawing.Size(32, 32);
+            this.playbutton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.playbutton.TabIndex = 11;
+            this.playbutton.TabStop = false;
+            this.playbutton.Click += new System.EventHandler(this.RunHtml_Click);
+            this.playbutton.MouseLeave += new System.EventHandler(this.MouseLeaveEvent);
+            this.playbutton.MouseHover += new System.EventHandler(this.MouseOverEvent);
             // 
-            // pictureBox3
+            // image
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(23, 85);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.MouseLeave += new System.EventHandler(this.MouseLeaveEvent);
-            this.pictureBox3.MouseHover += new System.EventHandler(this.MouseOverEvent);
+            this.image.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.image.Image = global::BootstrapBuilder.Properties.Resources.image;
+            this.image.Location = new System.Drawing.Point(10, 132);
+            this.image.Name = "image";
+            this.image.Size = new System.Drawing.Size(32, 32);
+            this.image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.image.TabIndex = 12;
+            this.image.TabStop = false;
+            this.image.MouseLeave += new System.EventHandler(this.MouseLeaveEvent);
+            this.image.MouseHover += new System.EventHandler(this.MouseOverEvent);
             // 
-            // pictureBox2
+            // tbTitle
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(430, 325);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.MouseHover += new System.EventHandler(this.MouseOverEvent);
+            this.tbTitle.Location = new System.Drawing.Point(186, 185);
+            this.tbTitle.Name = "tbTitle";
+            this.tbTitle.Size = new System.Drawing.Size(224, 20);
+            this.tbTitle.TabIndex = 13;
+            // 
+            // lbTitle
+            // 
+            this.lbTitle.AutoSize = true;
+            this.lbTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lbTitle.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTitle.ForeColor = System.Drawing.SystemColors.Control;
+            this.lbTitle.Location = new System.Drawing.Point(45, 184);
+            this.lbTitle.Name = "lbTitle";
+            this.lbTitle.Size = new System.Drawing.Size(140, 19);
+            this.lbTitle.TabIndex = 14;
+            this.lbTitle.Text = "Enter You Web Title:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(931, 523);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.btnURLPhoto);
-            this.Controls.Add(this.SelectFolder);
-            this.Controls.Add(this.RunHtml);
+            this.ClientSize = new System.Drawing.Size(1048, 549);
+            this.Controls.Add(this.lbTitle);
+            this.Controls.Add(this.tbTitle);
+            this.Controls.Add(this.image);
+            this.Controls.Add(this.playbutton);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.typebox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Style = MetroFramework.MetroColorStyle.Yellow;
@@ -111,19 +132,22 @@
             this.TransparencyKey = System.Drawing.SystemColors.InactiveBorder;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.OnFormLoad);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.typebox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.playbutton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.image)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button btnURLPhoto;
-        private System.Windows.Forms.Button RunHtml;
-        private System.Windows.Forms.Button SelectFolder;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox typebox;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox playbutton;
+        private System.Windows.Forms.PictureBox image;
+        private System.Windows.Forms.TextBox tbTitle;
+        private System.Windows.Forms.Label lbTitle;
     }
 }
 

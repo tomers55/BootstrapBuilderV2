@@ -10,16 +10,27 @@ using Microsoft.VisualBasic;
 using System.Drawing;
 using System.Reflection;
 using System.Security.Permissions;
-
+using System.Windows.Media.Imaging;
+using BootstrapBuilder.Properties;
+using System.Resources;
 
 namespace BootstrapBuilder
 {
-    class Desing
+    static class Desing
     {    
-        public static void showAnimatedPictureBox(PictureBox thePicture)
+        public static void ChangePicture(PictureBox thePicture,int Hover)
         {
-            thePicture.Image = Properties.Resources.
-            thePicture.Image = Properties.Resources.
+            ResourceManager rm = Resources.ResourceManager;
+            Bitmap myImage;
+            if (Hover == 1)
+            {
+                myImage = (Bitmap)rm.GetObject(thePicture.Name+"_1_");
+            }
+            else
+            { 
+                myImage = (Bitmap)rm.GetObject(thePicture.Name);
+            }
+            thePicture.Image = myImage;                    
             thePicture.Refresh();
             thePicture.Visible = true;
         }

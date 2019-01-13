@@ -23,6 +23,10 @@ namespace BootstrapBuilder
         {
             Form2 f2 = new Form2();
             f2.Hide();
+
+            //-----
+            tbTitle.Visible = false;
+            lbTitle.Visible = false;
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -62,13 +66,27 @@ namespace BootstrapBuilder
 
         private void MouseOverEvent(object sender, EventArgs e)
         {
-
+            PictureBox pBox = sender as PictureBox;
+            pBox.Cursor = Cursors.Hand;
+            Desing.ChangePicture(pBox, 1);
         }
         private void MouseLeaveEvent(object sender, EventArgs e)
         {
-
+            PictureBox pBox = sender as PictureBox;
+            Desing.ChangePicture(pBox, 0);
         }
 
+        private void notepad_Click(object sender, EventArgs e)
+        {
+            ExitForm f1 = new ExitForm();
 
+            f1.Show();
+        }
+
+        private void typebox_Click(object sender, EventArgs e)
+        {
+            lbTitle.Visible = true;
+            tbTitle.Visible = true;
+        }
     }
 }

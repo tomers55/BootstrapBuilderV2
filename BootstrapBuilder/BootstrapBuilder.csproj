@@ -69,6 +69,12 @@
     <Compile Include="Desing.cs" />
     <Compile Include="Dialog.cs" />
     <Compile Include="EditHtml.cs" />
+    <Compile Include="ExitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExitForm.Designer.cs">
+      <DependentUpon>ExitForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ExitForm.resx">
+      <DependentUpon>ExitForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -133,11 +142,52 @@
     <None Include="Images\Boot02.PNG" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\image%281%29.png" />
+    <None Include="Resources\typebox.png" />
+    <None Include="Resources\typebox%281%29.png" />
+    <None Include="Resources\image.png" />
+    <None Include="Resources\playbutton.png" />
+    <None Include="Resources\playbutton%281%29.png" />
+    <None Include="Resources\programming%282%29.png" />
+    <None Include="Resources\programming%281%29.png" />
+    <None Include="Resources\programming.png" />
+    <None Include="Resources\speed%281%291.png" />
+    <None Include="Resources\speed%281%29.png" />
+    <None Include="Resources\speed.png" />
+    <None Include="Resources\power-button-off.png" />
+    <None Include="Resources\power-button-off%281%29.png" />
+    <None Include="Resources\play-button.png" />
+    <None Include="Resources\play-button%281%29.png" />
+    <None Include="Resources\picture.png" />
+    <None Include="Resources\upload.png" />
+    <None Include="Resources\upload%281%29.png" />
+    <None Include="Resources\right-alignment.png" />
+    <None Include="Resources\right-alignment%281%29.png" />
+    <None Include="Resources\question-mark.png" />
+    <None Include="Resources\question-mark%281%29.png" />
+    <None Include="Resources\plus.png" />
+    <None Include="Resources\plus%281%29.png" />
+    <None Include="Resources\notepad.png" />
+    <None Include="Resources\notepad%281%29.png" />
+    <None Include="Resources\next.png" />
+    <None Include="Resources\next%281%29.png" />
+    <None Include="Icons\list%281%29.png" />
+    <None Include="Icons\list.png" />
     <Content Include="Images\center-alignment.png" />
     <Content Include="Images\list.png" />
     <Content Include="MetroFramework.txt" />
-    <Content Include="Resources\list%281%29.png" />
-    <Content Include="Resources\list.png" />
+    <None Include="Resources\alert%281%29.png" />
+    <None Include="Resources\alert.png" />
+    <None Include="Resources\center-alignment%281%29.png" />
+    <None Include="Resources\center-alignment.png" />
+    <None Include="Resources\import%281%29.png" />
+    <None Include="Resources\import.png" />
+    <None Include="Resources\info%281%29.png" />
+    <None Include="Resources\info.png" />
+    <None Include="Resources\left-alignment%281%29.png" />
+    <None Include="Resources\left-alignment.png" />
+    <None Include="Resources\list%281%29.png" />
+    <None Include="Resources\list.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
