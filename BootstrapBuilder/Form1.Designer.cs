@@ -35,6 +35,8 @@
             this.image = new System.Windows.Forms.PictureBox();
             this.tbTitle = new System.Windows.Forms.TextBox();
             this.lbTitle = new System.Windows.Forms.Label();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.btnTitle = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.typebox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.playbutton)).BeginInit();
@@ -45,7 +47,7 @@
             // 
             this.typebox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.typebox.Image = global::BootstrapBuilder.Properties.Resources.typebox;
-            this.typebox.Location = new System.Drawing.Point(10, 179);
+            this.typebox.Location = new System.Drawing.Point(21, 106);
             this.typebox.Name = "typebox";
             this.typebox.Size = new System.Drawing.Size(30, 30);
             this.typebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -59,7 +61,7 @@
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureBox1.Image = global::BootstrapBuilder.Properties.Resources.speed_1_1;
-            this.pictureBox1.Location = new System.Drawing.Point(405, 17);
+            this.pictureBox1.Location = new System.Drawing.Point(584, 19);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(32, 32);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -69,7 +71,7 @@
             // playbutton
             // 
             this.playbutton.Image = global::BootstrapBuilder.Properties.Resources.playbutton;
-            this.playbutton.Location = new System.Drawing.Point(10, 85);
+            this.playbutton.Location = new System.Drawing.Point(60, 63);
             this.playbutton.Name = "playbutton";
             this.playbutton.Size = new System.Drawing.Size(32, 32);
             this.playbutton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -83,7 +85,7 @@
             // 
             this.image.Cursor = System.Windows.Forms.Cursors.Hand;
             this.image.Image = global::BootstrapBuilder.Properties.Resources.image;
-            this.image.Location = new System.Drawing.Point(10, 132);
+            this.image.Location = new System.Drawing.Point(21, 63);
             this.image.Name = "image";
             this.image.Size = new System.Drawing.Size(32, 32);
             this.image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -94,9 +96,9 @@
             // 
             // tbTitle
             // 
-            this.tbTitle.Location = new System.Drawing.Point(186, 185);
+            this.tbTitle.Location = new System.Drawing.Point(21, 142);
             this.tbTitle.Name = "tbTitle";
-            this.tbTitle.Size = new System.Drawing.Size(224, 20);
+            this.tbTitle.Size = new System.Drawing.Size(240, 20);
             this.tbTitle.TabIndex = 13;
             // 
             // lbTitle
@@ -105,18 +107,38 @@
             this.lbTitle.BackColor = System.Drawing.Color.Transparent;
             this.lbTitle.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTitle.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbTitle.Location = new System.Drawing.Point(45, 184);
+            this.lbTitle.Location = new System.Drawing.Point(56, 111);
             this.lbTitle.Name = "lbTitle";
             this.lbTitle.Size = new System.Drawing.Size(140, 19);
             this.lbTitle.TabIndex = 14;
             this.lbTitle.Text = "Enter You Web Title:";
+            // 
+            // webBrowser1
+            // 
+            this.webBrowser1.Location = new System.Drawing.Point(382, 106);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(1008, 544);
+            this.webBrowser1.TabIndex = 15;
+            // 
+            // btnTitle
+            // 
+            this.btnTitle.Location = new System.Drawing.Point(267, 139);
+            this.btnTitle.Name = "btnTitle";
+            this.btnTitle.Size = new System.Drawing.Size(75, 23);
+            this.btnTitle.TabIndex = 16;
+            this.btnTitle.Text = "button1";
+            this.btnTitle.UseVisualStyleBackColor = true;
+            this.btnTitle.Click += new System.EventHandler(this.btnTitle_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1048, 549);
+            this.ClientSize = new System.Drawing.Size(1413, 673);
+            this.Controls.Add(this.btnTitle);
+            this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.lbTitle);
             this.Controls.Add(this.tbTitle);
             this.Controls.Add(this.image);
@@ -148,6 +170,8 @@
         private System.Windows.Forms.PictureBox image;
         private System.Windows.Forms.TextBox tbTitle;
         private System.Windows.Forms.Label lbTitle;
+        private System.Windows.Forms.WebBrowser webBrowser1;
+        private System.Windows.Forms.Button btnTitle;
     }
 }
 

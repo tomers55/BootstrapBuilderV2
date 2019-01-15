@@ -14,8 +14,14 @@ namespace BootstrapBuilder
         public Form1()
         {            
             InitializeComponent();
+
             HTMLPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             HTMLPath = Path.GetFullPath(Path.Combine(HTMLPath, @"..\..\")) + @"\WebTemplate01\index.html";
+
+            //webBrowser1.DocumentText = File.ReadAllText(HTMLPath);
+            //string curDir = Directory.GetCurrentDirectory();
+            //this.webBrowser1.Url = new Uri(String.Format("file:///C:/Users/tomer/source/repos/BootstrapBuilder/BootstrapBuilder/webTemplate01/index.html", curDir));            
+
         }     
         string HTMLPath;
 
@@ -27,6 +33,7 @@ namespace BootstrapBuilder
             //-----
             tbTitle.Visible = false;
             lbTitle.Visible = false;
+            btnTitle.Visible = false;
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -42,11 +49,13 @@ namespace BootstrapBuilder
         public void RunHtml_Click(object sender, EventArgs e)
         {
             if (HTMLPath != null)
-            {
-                Process.Start(HTMLPath);
+            {               
+                //Process.Start(HTMLPath);
+                string curDir = Directory.GetCurrentDirectory();
+                this.webBrowser1.Url = new Uri(String.Format("file:///C:/Users/tomer/source/repos/BootstrapBuilder/BootstrapBuilder/webTemplate01/index.html", curDir));            
             }
             else
-            { return; }        
+            { return; }       
         }
 
         private void btnURLPhoto_Click(object sender, EventArgs e)
@@ -85,8 +94,20 @@ namespace BootstrapBuilder
 
         private void typebox_Click(object sender, EventArgs e)
         {
+            PictureBox pBox = sender as PictureBox;
+            Desing.ChangePicture(pBox, 1);
             lbTitle.Visible = true;
             tbTitle.Visible = true;
+            btnTitle.Visible = true;
+        }
+
+        private void btnTitle_Click(object sender, EventArgs e)
+        {
+            string NetPath = "file:///C:/Users/tomer/source/repos/BootstrapBuilder/BootstrapBuilder/webTemplate01/index.html";
+            Dialog.Msg(NetPath + "\n" +HTMLPath);
+            if (tbTitle.Text != "")
+            EditHtml.EditTitle(tbTitle.Text, HTMLPath);
+            EditHtml.RefreshBrowser(NetPath, webBrowser1);
         }
     }
 }

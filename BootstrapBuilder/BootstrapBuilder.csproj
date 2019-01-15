@@ -87,6 +87,8 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Globals.cs" />
+    <Compile Include="MyRenderer.cs" />
     <Compile Include="OvalPictureBox .cs">
       <SubType>Component</SubType>
     </Compile>
@@ -142,6 +144,10 @@
     <None Include="Images\Boot02.PNG" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\ParchedPositiveBarebirdbat-small.gif" />
+    <None Include="Resources\UBj7pe.gif" />
+    <None Include="Resources\YYe6.gif" />
+    <None Include="Resources\giphy.gif" />
     <None Include="Resources\image%281%29.png" />
     <None Include="Resources\typebox.png" />
     <None Include="Resources\typebox%281%29.png" />

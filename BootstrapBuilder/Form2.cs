@@ -19,9 +19,8 @@ namespace BootstrapBuilder
         public void OnPicturesClick(object sender, EventArgs e)
         {
             PictureBox pBox = sender as PictureBox;
-
+            Globals.addGlobalVar("WebName", pBox.Name);
             Form1 f1 = new Form1();
-
             f1.Show();
             f1.Left = this.Left;
             f1.Top = this.Top;

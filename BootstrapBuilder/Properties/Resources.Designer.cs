@@ -120,6 +120,16 @@ namespace BootstrapBuilder.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap giphy {
+            get {
+                object obj = ResourceManager.GetObject("giphy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to           &lt;div class=&quot;carousel-item&quot; style=&quot;background-image: url(&apos;http://placehold.it/1900x1080&apos;)&quot;&gt;
         ///            &lt;div class=&quot;carousel-caption d-none d-md-block&quot;&gt;
         ///              &lt;h3&gt;Title&lt;/h3&gt;
@@ -271,6 +281,16 @@ namespace BootstrapBuilder.Properties {
         internal static System.Drawing.Bitmap notepad_1_ {
             get {
                 object obj = ResourceManager.GetObject("notepad_1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ParchedPositiveBarebirdbat_small {
+            get {
+                object obj = ResourceManager.GetObject("ParchedPositiveBarebirdbat-small", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -468,6 +488,16 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap UBj7pe {
+            get {
+                object obj = ResourceManager.GetObject("UBj7pe", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap upload {
             get {
                 object obj = ResourceManager.GetObject("upload", resourceCulture);
@@ -481,6 +511,16 @@ namespace BootstrapBuilder.Properties {
         internal static System.Drawing.Bitmap upload_1_ {
             get {
                 object obj = ResourceManager.GetObject("upload_1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap YYe6 {
+            get {
+                object obj = ResourceManager.GetObject("YYe6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -15,6 +15,13 @@ namespace BootstrapBuilder
 {
     public static class EditHtml
     {
+        public static void RefreshBrowser(string Path,WebBrowser wb)
+        {
+            WebBrowser WebBrowser1 = new WebBrowser();
+            string curDir = Directory.GetCurrentDirectory();
+            wb.Url = new Uri(String.Format(Path, curDir));
+        }
+
         public static void AddPhoto(string PhotoPath, string HTMLPath, object Title, string Description)
         {
             string HtmlAddPhoho = Properties.Resources.HtmlAddPhoho;

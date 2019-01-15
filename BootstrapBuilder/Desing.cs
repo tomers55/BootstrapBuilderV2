@@ -34,5 +34,7 @@ namespace BootstrapBuilder
             thePicture.Refresh();
             thePicture.Visible = true;
         }
+
+
     }
 }
