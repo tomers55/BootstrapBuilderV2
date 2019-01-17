@@ -144,6 +144,7 @@
     <None Include="Images\Boot02.PNG" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Spinner-1s-200px.gif" />
     <None Include="Resources\ParchedPositiveBarebirdbat-small.gif" />
     <None Include="Resources\UBj7pe.gif" />
     <None Include="Resources\YYe6.gif" />

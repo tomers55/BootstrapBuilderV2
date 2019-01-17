@@ -217,6 +217,9 @@
   <data name="notepad_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\notepad(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ParchedPositiveBarebirdbat-small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ParchedPositiveBarebirdbat-small.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="power-button-off(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\power-button-off(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -253,7 +256,7 @@
   <data name="next_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\next(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ParchedPositiveBarebirdbat-small" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ParchedPositiveBarebirdbat-small.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Spinner-1s-200px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Spinner-1s-200px.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

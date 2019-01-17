@@ -32,11 +32,11 @@
             this.typebox = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.playbutton = new System.Windows.Forms.PictureBox();
-            this.image = new System.Windows.Forms.PictureBox();
             this.tbTitle = new System.Windows.Forms.TextBox();
             this.lbTitle = new System.Windows.Forms.Label();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.btnTitle = new System.Windows.Forms.Button();
+            this.image = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.typebox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.playbutton)).BeginInit();
@@ -71,7 +71,7 @@
             // playbutton
             // 
             this.playbutton.Image = global::BootstrapBuilder.Properties.Resources.playbutton;
-            this.playbutton.Location = new System.Drawing.Point(60, 63);
+            this.playbutton.Location = new System.Drawing.Point(1348, 73);
             this.playbutton.Name = "playbutton";
             this.playbutton.Size = new System.Drawing.Size(32, 32);
             this.playbutton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -80,19 +80,6 @@
             this.playbutton.Click += new System.EventHandler(this.RunHtml_Click);
             this.playbutton.MouseLeave += new System.EventHandler(this.MouseLeaveEvent);
             this.playbutton.MouseHover += new System.EventHandler(this.MouseOverEvent);
-            // 
-            // image
-            // 
-            this.image.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.image.Image = global::BootstrapBuilder.Properties.Resources.image;
-            this.image.Location = new System.Drawing.Point(21, 63);
-            this.image.Name = "image";
-            this.image.Size = new System.Drawing.Size(32, 32);
-            this.image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.image.TabIndex = 12;
-            this.image.TabStop = false;
-            this.image.MouseLeave += new System.EventHandler(this.MouseLeaveEvent);
-            this.image.MouseHover += new System.EventHandler(this.MouseOverEvent);
             // 
             // tbTitle
             // 
@@ -115,7 +102,7 @@
             // 
             // webBrowser1
             // 
-            this.webBrowser1.Location = new System.Drawing.Point(382, 106);
+            this.webBrowser1.Location = new System.Drawing.Point(372, 111);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(1008, 544);
@@ -130,6 +117,20 @@
             this.btnTitle.Text = "button1";
             this.btnTitle.UseVisualStyleBackColor = true;
             this.btnTitle.Click += new System.EventHandler(this.btnTitle_Click);
+            // 
+            // image
+            // 
+            this.image.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.image.Image = global::BootstrapBuilder.Properties.Resources.image;
+            this.image.Location = new System.Drawing.Point(23, 168);
+            this.image.Name = "image";
+            this.image.Size = new System.Drawing.Size(32, 32);
+            this.image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.image.TabIndex = 12;
+            this.image.TabStop = false;
+            this.image.Click += new System.EventHandler(this.image_Click);
+            this.image.MouseLeave += new System.EventHandler(this.MouseLeaveEvent);
+            this.image.MouseHover += new System.EventHandler(this.MouseOverEvent);
             // 
             // Form1
             // 
@@ -167,11 +168,11 @@
         private System.Windows.Forms.PictureBox typebox;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox playbutton;
-        private System.Windows.Forms.PictureBox image;
         private System.Windows.Forms.TextBox tbTitle;
         private System.Windows.Forms.Label lbTitle;
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Button btnTitle;
+        private System.Windows.Forms.PictureBox image;
     }
 }
 

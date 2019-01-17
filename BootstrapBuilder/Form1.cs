@@ -6,6 +6,7 @@ using Microsoft.VisualBasic;
 using System.Drawing;
 using System.Reflection;
 using System.Security.Permissions;
+using Microsoft.Win32;
 
 namespace BootstrapBuilder
 {
@@ -49,10 +50,9 @@ namespace BootstrapBuilder
         public void RunHtml_Click(object sender, EventArgs e)
         {
             if (HTMLPath != null)
-            {               
-                //Process.Start(HTMLPath);
-                string curDir = Directory.GetCurrentDirectory();
-                this.webBrowser1.Url = new Uri(String.Format("file:///C:/Users/tomer/source/repos/BootstrapBuilder/BootstrapBuilder/webTemplate01/index.html", curDir));            
+            {
+                string NetPath = "https://blackrockdigital.github.io/startbootstrap-freelancer/";
+                EditHtml.RefreshBrowser(NetPath, webBrowser1);
             }
             else
             { return; }       
@@ -70,7 +70,6 @@ namespace BootstrapBuilder
         private void SelectWeb_Click(object sender, EventArgs e)
         {
             string Web = ((PictureBox)sender).Name;
-            Dialog.Msg(Web);
         }
 
         private void MouseOverEvent(object sender, EventArgs e)
@@ -103,11 +102,16 @@ namespace BootstrapBuilder
 
         private void btnTitle_Click(object sender, EventArgs e)
         {
-            string NetPath = "file:///C:/Users/tomer/source/repos/BootstrapBuilder/BootstrapBuilder/webTemplate01/index.html";
-            Dialog.Msg(NetPath + "\n" +HTMLPath);
+            string NetPath = "https://blackrockdigital.github.io/startbootstrap-freelancer/";
             if (tbTitle.Text != "")
             EditHtml.EditTitle(tbTitle.Text, HTMLPath);
             EditHtml.RefreshBrowser(NetPath, webBrowser1);
+        }
+
+        private void image_Click(object sender, EventArgs e)
+        {
+            string x="";
+            Dialog.InputBox("","",ref x);
         }
     }
 }
