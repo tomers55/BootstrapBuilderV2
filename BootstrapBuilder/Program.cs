@@ -17,15 +17,16 @@ namespace BootstrapBuilder
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form2());
             AddRegistryKeyForWebBrowser();
+            Application.Run(new Form2());   //לשנות בהמשך ********
+            //Application.Run(new Form2());
         }
 
         static void AddRegistryKeyForWebBrowser()
         {
             //מוסיף קיי לרג'יסטרי כדי שהוובראוזר יתעדכן לגרסא החדשה של אקספלורר
             RegistryKey key = Registry.CurrentUser.OpenSubKey("Software\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_BROWSER_EMULATION", true);
-            key.SetValue("BootstrapBuilder.exe", 11001, RegistryValueKind.DWord);
+            key.SetValue(System.AppDomain.CurrentDomain.FriendlyName.ToString(), 11001, RegistryValueKind.DWord);
         }
     }
 }

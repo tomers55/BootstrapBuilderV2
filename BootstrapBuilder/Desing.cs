@@ -35,6 +35,26 @@ namespace BootstrapBuilder
             thePicture.Visible = true;
         }
 
+        public static void ControlBox(PictureBox thePicture,int Hover)
+        {
+            if (Hover == 1)
+            {
+                thePicture.Cursor = Cursors.Hand;
 
+                if (thePicture.Name == "pbClose")
+                    thePicture.BackColor = Color.Red;
+                else
+                    thePicture.BackColor = Color.WhiteSmoke;
+
+            }
+            else
+                thePicture.BackColor = Color.Transparent;
+
+        }
+        public static void textevent(object sender, EventArgs e)
+        {
+            Dialog.Msg("fffff");
+        }
     }
 }
+

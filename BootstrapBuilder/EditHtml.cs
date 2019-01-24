@@ -22,8 +22,13 @@ namespace BootstrapBuilder
             wb.Url = new Uri(String.Format(Path, curDir));
         }
 
-        public static void AddPhoto(string PhotoPath, string HTMLPath, object Title, string Description)
+        public static void AddPhoto(string HTMLPath)
         {
+            string PhotoURL = "https://www.akc.org/wp-content/themes/akc/component-library/assets/img/welcome.jpg";
+            string Title = "Title ";
+            string Description = "Description";
+            Dialog.MultiInputBox("Select Url", ref PhotoURL, ref Title, ref Description);
+
             string HtmlAddPhoho = Properties.Resources.HtmlAddPhoho;
             string DataSlide = Properties.Resources.DataSlide;
             string FirstPhoto = Properties.Resources.FirstPhoto;
@@ -48,12 +53,10 @@ namespace BootstrapBuilder
                 text = text.Replace("<!--FirstRun-->", "");
                 text = text.Replace("<h3>0-Title</h3>", "<h3>" + Title.ToString() + "</h3>");
                 text = text.Replace("<p>0-Des</p>", "<p>" + Description.ToString() + "</p>");
-                text = text.Replace("http://placehold.it/1900x1080", PhotoPath);
                 //text = text.Replace(FirstPhoto, HtmlAddPhoho);
             }
             else
             {
-                HtmlAddPhoho = HtmlAddPhoho.Replace("http://placehold.it/1900x1080", PhotoPath);
                 HtmlAddPhoho = HtmlAddPhoho.Replace("<h3>Title</h3>", "<h3>" + Title + "</h3>");
                 HtmlAddPhoho = HtmlAddPhoho.Replace("<p>Des</p>", "<p>" + Title + "</p>");
                 text = File.ReadAllText(HTMLPath);
