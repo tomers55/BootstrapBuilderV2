@@ -8,6 +8,9 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO.Compression;
+using System.IO;
+
 
 namespace BootstrapBuilder
 {
@@ -123,5 +126,44 @@ namespace BootstrapBuilder
             new ToolTip().SetToolTip(pBox, "Strat Edit Your WebSite");
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (listView1.SelectedItems.Count == 0)
+            {
+                Dialog.Error("No Project Selected.");
+                return;
+            }
+            
+            string ProjectName = listView1.SelectedItems[0].Text;
+            var window = MessageBox.Show("Are you sure to Delete "+ProjectName+" ?", "BootStarpBuilder", MessageBoxButtons.YesNo);
+            if (window == DialogResult.Yes)
+            {
+                Directory.Delete(Globals.GetValue("Global_projectfolderPath") + @"\Projects\" + ProjectName, true);
+                listView1.Items.Remove(listView1.SelectedItems[0]);
+            }
+            else
+            {
+                //DoNothing
+            }
+        }
+
+        private void ShowPreview(object sender, EventArgs e)
+        {
+            if (listView1.SelectedItems.Count != 0)
+            {
+                //Dialog.Msg(Globals.GetValue("Global_projectfolderPath").ToString() + @"\Projects\" + listView1.SelectedItems[0].Text + @"\index.html");
+                EditHtml.RefreshBrowser(Globals.GetValue("Global_projectfolderPath").ToString() + @"\Projects\" + listView1.SelectedItems[0].Text + @"\index.Html",webBrowser1);
+                webBrowser1.Visible = true;
+            }
+        }
+
+        private void SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //Dialog.Msg(listView1.SelectedItems.Count);
+            if (listView1.SelectedItems.Count == 0)
+            {
+                webBrowser1.Visible = false;
+            }
+        }
     }
 }

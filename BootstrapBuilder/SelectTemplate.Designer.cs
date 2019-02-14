@@ -154,34 +154,33 @@
             this.radioButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton1.Location = new System.Drawing.Point(3, 3);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(121, 21);
+            this.radioButton1.Size = new System.Drawing.Size(282, 21);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "WebTemplate01";
+            this.radioButton1.Text = "StartbootstrapFullSliderGhPages_Template";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // metroLink1
             // 
-            this.metroLink1.Location = new System.Drawing.Point(130, 3);
+            this.metroLink1.Location = new System.Drawing.Point(3, 30);
             this.metroLink1.Name = "metroLink1";
-            this.metroLink1.Size = new System.Drawing.Size(468, 23);
+            this.metroLink1.Size = new System.Drawing.Size(597, 23);
             this.metroLink1.TabIndex = 1;
-            this.metroLink1.Text = "https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/";
             this.metroLink1.UseSelectable = true;
             // 
             // webBrowser1
             // 
-            this.webBrowser1.Location = new System.Drawing.Point(3, 32);
+            this.webBrowser1.Location = new System.Drawing.Point(3, 59);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(597, 320);
             this.webBrowser1.TabIndex = 2;
-            this.webBrowser1.Url = new System.Uri("https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/", System.UriKind.Absolute);
+            this.webBrowser1.Url = new System.Uri("", System.UriKind.Relative);
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.SystemColors.Control;
-            this.panel7.Location = new System.Drawing.Point(3, 358);
+            this.panel7.Location = new System.Drawing.Point(3, 385);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(567, 45);
             this.panel7.TabIndex = 3;
@@ -190,7 +189,7 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(3, 409);
+            this.radioButton2.Location = new System.Drawing.Point(3, 436);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(125, 21);
             this.radioButton2.TabIndex = 4;
@@ -200,16 +199,15 @@
             // 
             // metroLink2
             // 
-            this.metroLink2.Location = new System.Drawing.Point(134, 409);
+            this.metroLink2.Location = new System.Drawing.Point(134, 436);
             this.metroLink2.Name = "metroLink2";
             this.metroLink2.Size = new System.Drawing.Size(466, 23);
             this.metroLink2.TabIndex = 5;
-            this.metroLink2.Text = "https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/";
             this.metroLink2.UseSelectable = true;
             // 
             // webBrowser2
             // 
-            this.webBrowser2.Location = new System.Drawing.Point(3, 438);
+            this.webBrowser2.Location = new System.Drawing.Point(3, 465);
             this.webBrowser2.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser2.Name = "webBrowser2";
             this.webBrowser2.Size = new System.Drawing.Size(597, 320);
@@ -219,7 +217,7 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.SystemColors.Control;
-            this.panel8.Location = new System.Drawing.Point(3, 764);
+            this.panel8.Location = new System.Drawing.Point(3, 791);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(294, 45);
             this.panel8.TabIndex = 7;

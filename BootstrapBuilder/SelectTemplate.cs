@@ -15,6 +15,7 @@ namespace BootstrapBuilder
         public SelectTemplate()
         {
             InitializeComponent();
+            EditHtml.RefreshBrowser(Globals.GetValue("Global_Html_StartbootstrapFullSliderGhPages_Template").ToString(), webBrowser1);
         }
         public string ReturnValue1 { get; set; }
         public string ReturnValue2 { get; set; }

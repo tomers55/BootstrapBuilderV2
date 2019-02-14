@@ -22,7 +22,7 @@ namespace BootstrapBuilder.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace BootstrapBuilder.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("BootstrapBuilder.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace BootstrapBuilder.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,27 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap alert {
+        public static System.Drawing.Bitmap add_new_document {
+            get {
+                object obj = ResourceManager.GetObject("add-new-document", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap add_new_document_1_ {
+            get {
+                object obj = ResourceManager.GetObject("add-new-document(1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap alert {
             get {
                 object obj = ResourceManager.GetObject("alert", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -73,7 +93,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap alert_1_ {
+        public static System.Drawing.Bitmap alert_1_ {
             get {
                 object obj = ResourceManager.GetObject("alert_1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -83,7 +103,17 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cancel_3_ {
+        public static System.Drawing.Bitmap builder {
+            get {
+                object obj = ResourceManager.GetObject("builder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap cancel_3_ {
             get {
                 object obj = ResourceManager.GetObject("cancel_3_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -93,7 +123,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap center_alignment {
+        public static System.Drawing.Bitmap center_alignment {
             get {
                 object obj = ResourceManager.GetObject("center_alignment", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -103,9 +133,29 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap center_alignment_1_ {
+        public static System.Drawing.Bitmap center_alignment_1_ {
             get {
                 object obj = ResourceManager.GetObject("center_alignment_1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap centeralignment {
+            get {
+                object obj = ResourceManager.GetObject("centeralignment", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap colors {
+            get {
+                object obj = ResourceManager.GetObject("colors", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -114,16 +164,26 @@ namespace BootstrapBuilder.Properties {
         ///   Looks up a localized string similar to           &lt;li data-target=&quot;#carouselExampleIndicators&quot; data-slide-to=&quot;Num&quot;&gt;&lt;/li&gt;
         ///	&lt;!--AddDataSlide--&gt;.
         /// </summary>
-        internal static string DataSlide {
+        public static string DataSlide {
             get {
                 return ResourceManager.GetString("DataSlide", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap delete_photo_1_ {
+            get {
+                object obj = ResourceManager.GetObject("delete-photo(1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to           &lt;div class=&quot;carousel-item active&quot; style=&quot;background-image: url(&apos;http://placehold.it/1900x1080&apos;)&quot;&gt;.
         /// </summary>
-        internal static string FirstPhoto {
+        public static string FirstPhoto {
             get {
                 return ResourceManager.GetString("FirstPhoto", resourceCulture);
             }
@@ -132,7 +192,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap full_screen {
+        public static System.Drawing.Bitmap full_screen {
             get {
                 object obj = ResourceManager.GetObject("full_screen", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -142,7 +202,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap giphy {
+        public static System.Drawing.Bitmap giphy {
             get {
                 object obj = ResourceManager.GetObject("giphy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -152,7 +212,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap html {
+        public static System.Drawing.Bitmap html {
             get {
                 object obj = ResourceManager.GetObject("html", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -162,7 +222,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap html1 {
+        public static System.Drawing.Bitmap html1 {
             get {
                 object obj = ResourceManager.GetObject("html1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -179,7 +239,7 @@ namespace BootstrapBuilder.Properties {
         ///          &lt;!--AddPhoto--&gt;
         ///.
         /// </summary>
-        internal static string HtmlAddPhoho {
+        public static string HtmlAddPhoho {
             get {
                 return ResourceManager.GetString("HtmlAddPhoho", resourceCulture);
             }
@@ -188,7 +248,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap image {
+        public static System.Drawing.Bitmap image {
             get {
                 object obj = ResourceManager.GetObject("image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -198,7 +258,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap image_1_ {
+        public static System.Drawing.Bitmap image_1_ {
             get {
                 object obj = ResourceManager.GetObject("image_1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -208,7 +268,17 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap import {
+        public static System.Drawing.Bitmap images {
+            get {
+                object obj = ResourceManager.GetObject("images", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap import {
             get {
                 object obj = ResourceManager.GetObject("import", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -218,7 +288,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap import_1_ {
+        public static System.Drawing.Bitmap import_1_ {
             get {
                 object obj = ResourceManager.GetObject("import_1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -228,7 +298,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap info {
+        public static System.Drawing.Bitmap info {
             get {
                 object obj = ResourceManager.GetObject("info", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -238,7 +308,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap info_1_ {
+        public static System.Drawing.Bitmap info_1_ {
             get {
                 object obj = ResourceManager.GetObject("info_1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -248,7 +318,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap left_alignment {
+        public static System.Drawing.Bitmap left_alignment {
             get {
                 object obj = ResourceManager.GetObject("left_alignment", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -258,7 +328,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap left_alignment_1_ {
+        public static System.Drawing.Bitmap left_alignment_1_ {
             get {
                 object obj = ResourceManager.GetObject("left_alignment_1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -268,7 +338,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap list {
+        public static System.Drawing.Bitmap list {
             get {
                 object obj = ResourceManager.GetObject("list", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -278,7 +348,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap list_1_ {
+        public static System.Drawing.Bitmap list_1_ {
             get {
                 object obj = ResourceManager.GetObject("list_1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -288,7 +358,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Logo {
+        public static System.Drawing.Bitmap Logo {
             get {
                 object obj = ResourceManager.GetObject("Logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -298,7 +368,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap next {
+        public static System.Drawing.Bitmap next {
             get {
                 object obj = ResourceManager.GetObject("next", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -308,7 +378,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap next_1_ {
+        public static System.Drawing.Bitmap next_1_ {
             get {
                 object obj = ResourceManager.GetObject("next_1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -318,7 +388,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap notepad {
+        public static System.Drawing.Bitmap notepad {
             get {
                 object obj = ResourceManager.GetObject("notepad", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -328,7 +398,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap notepad_1_ {
+        public static System.Drawing.Bitmap notepad_1_ {
             get {
                 object obj = ResourceManager.GetObject("notepad_1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -338,7 +408,17 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap paintbrush {
+        public static System.Drawing.Bitmap paint_palette_and_brush {
+            get {
+                object obj = ResourceManager.GetObject("paint-palette-and-brush", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap paintbrush {
             get {
                 object obj = ResourceManager.GetObject("paintbrush", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -348,7 +428,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap paintbrush_1_ {
+        public static System.Drawing.Bitmap paintbrush_1_ {
             get {
                 object obj = ResourceManager.GetObject("paintbrush(1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -358,7 +438,27 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap picture {
+        public static System.Drawing.Bitmap pantone {
+            get {
+                object obj = ResourceManager.GetObject("pantone", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap pantone_1_ {
+            get {
+                object obj = ResourceManager.GetObject("pantone(1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap picture {
             get {
                 object obj = ResourceManager.GetObject("picture", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -368,7 +468,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap playbutton {
+        public static System.Drawing.Bitmap playbutton {
             get {
                 object obj = ResourceManager.GetObject("playbutton", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -378,7 +478,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap playbutton_1_ {
+        public static System.Drawing.Bitmap playbutton_1_ {
             get {
                 object obj = ResourceManager.GetObject("playbutton_1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -388,7 +488,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap plus {
+        public static System.Drawing.Bitmap plus {
             get {
                 object obj = ResourceManager.GetObject("plus", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -398,7 +498,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap plus_1_ {
+        public static System.Drawing.Bitmap plus_1_ {
             get {
                 object obj = ResourceManager.GetObject("plus_1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -408,7 +508,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap programming {
+        public static System.Drawing.Bitmap programming {
             get {
                 object obj = ResourceManager.GetObject("programming", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -418,7 +518,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap question_mark {
+        public static System.Drawing.Bitmap question_mark {
             get {
                 object obj = ResourceManager.GetObject("question_mark", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -428,7 +528,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap question_mark_1_ {
+        public static System.Drawing.Bitmap question_mark_1_ {
             get {
                 object obj = ResourceManager.GetObject("question_mark_1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -438,7 +538,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap right_alignment {
+        public static System.Drawing.Bitmap right_alignment {
             get {
                 object obj = ResourceManager.GetObject("right_alignment", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -448,7 +548,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap right_alignment_1_ {
+        public static System.Drawing.Bitmap right_alignment_1_ {
             get {
                 object obj = ResourceManager.GetObject("right_alignment_1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -458,7 +558,17 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap speed {
+        public static System.Drawing.Bitmap rubbish_bin {
+            get {
+                object obj = ResourceManager.GetObject("rubbish-bin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap speed {
             get {
                 object obj = ResourceManager.GetObject("speed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -468,7 +578,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap speed_1_ {
+        public static System.Drawing.Bitmap speed_1_ {
             get {
                 object obj = ResourceManager.GetObject("speed_1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -478,7 +588,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap speed32 {
+        public static System.Drawing.Bitmap speed32 {
             get {
                 object obj = ResourceManager.GetObject("speed32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -488,7 +598,37 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap typebox {
+        public static System.Drawing.Bitmap spinner {
+            get {
+                object obj = ResourceManager.GetObject("spinner", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] StartbootstrapFullSliderGhPages {
+            get {
+                object obj = ResourceManager.GetObject("StartbootstrapFullSliderGhPages", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] tempV1 {
+            get {
+                object obj = ResourceManager.GetObject("tempV1", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap typebox {
             get {
                 object obj = ResourceManager.GetObject("typebox", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -498,7 +638,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap typebox_1_ {
+        public static System.Drawing.Bitmap typebox_1_ {
             get {
                 object obj = ResourceManager.GetObject("typebox_1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -508,7 +648,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap upload {
+        public static System.Drawing.Bitmap upload {
             get {
                 object obj = ResourceManager.GetObject("upload", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -518,7 +658,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap upload_1_ {
+        public static System.Drawing.Bitmap upload_1_ {
             get {
                 object obj = ResourceManager.GetObject("upload_1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -528,7 +668,7 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap worker__1_ {
+        public static System.Drawing.Bitmap worker__1_ {
             get {
                 object obj = ResourceManager.GetObject("worker (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -538,7 +678,17 @@ namespace BootstrapBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap YYe6 {
+        public static System.Drawing.Bitmap worker_of_construction_working_with_a_shovel_beside_material_pile {
+            get {
+                object obj = ResourceManager.GetObject("worker-of-construction-working-with-a-shovel-beside-material-pile", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap YYe6 {
             get {
                 object obj = ResourceManager.GetObject("YYe6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));

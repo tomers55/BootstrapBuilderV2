@@ -31,6 +31,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup />
   <ItemGroup>
     <Reference Include="CommonWin32, Version=1.1.4.2, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\CommonWin32.1.1.4.2\lib\net20\CommonWin32.dll</HintPath>
@@ -52,6 +53,7 @@
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -67,6 +69,12 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ButtonsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ButtonsUC.Designer.cs">
+      <DependentUpon>ButtonsUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Desing.cs" />
     <Compile Include="Dialog.cs" />
     <Compile Include="EditHtml.cs" />
@@ -102,6 +110,9 @@
     <Compile Include="SelectTemplate.Designer.cs">
       <DependentUpon>SelectTemplate.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ButtonsUC.resx">
+      <DependentUpon>ButtonsUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ExitForm.resx">
       <DependentUpon>ExitForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,7 +123,7 @@
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
@@ -155,11 +166,24 @@
     <None Include="Images\Boot02.PNG" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\images.png" />
+    <None Include="Resources\spinner.gif" />
+    <None Include="Resources\pantone%281%29.png" />
+    <None Include="Resources\pantone.png" />
+    <None Include="Resources\builder.png" />
+    <None Include="Resources\worker-of-construction-working-with-a-shovel-beside-material-pile.png" />
+    <None Include="Resources\rubbish-bin.png" />
+    <None Include="Resources\add-new-document%281%29.png" />
+    <None Include="Resources\add-new-document.png" />
+    <None Include="Resources\delete-photo%281%29.png" />
+    <None Include="Resources\centeralignment.png" />
     <None Include="Resources\speed32.png" />
     <None Include="Resources\paintbrush%281%29.png" />
     <None Include="Resources\paintbrush.png" />
     <None Include="Resources\html1.png" />
     <None Include="Resources\html.png" />
+    <None Include="Resources\startbootstrap-full-slider-gh-pages.zip" />
+    <None Include="Resources\StartbootstrapFullSliderGhPages.zip" />
     <None Include="Resources\worker %281%29.png" />
     <None Include="Resources\worker.png" />
     <None Include="Resources\Logo.png" />

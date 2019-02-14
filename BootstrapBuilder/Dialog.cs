@@ -20,9 +20,7 @@ namespace BootstrapBuilder
         public static void Error(string x)
         {
             MessageBox.Show(x, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        }
-
-        
+        }        
 
         public static DialogResult InputBox(string title, string promptText, ref string value)
         {
@@ -129,6 +127,44 @@ namespace BootstrapBuilder
             dValue = textBoxDes.Text;
             return dialogResult;
         }
+        public static DialogResult YesNo(string title, string promptText)
+        {
+            Form form = new Form();
+            Label label = new Label();
+            Label label2 = new Label();
+            Button buttonOk = new Button();
+            Button buttonCancel = new Button();
 
+            form.Text = title;
+            label.Text = promptText;
+
+            buttonOk.Text = "OK";
+            buttonCancel.Text = "Cancel";
+            buttonOk.DialogResult = DialogResult.OK;
+            buttonCancel.DialogResult = DialogResult.Cancel;
+
+            label.SetBounds(9, 20, 372, 13);
+            label2.SetBounds(12, 36, 372, 20);
+            buttonOk.SetBounds(228, 72, 75, 23);
+            buttonCancel.SetBounds(309, 72, 75, 23);
+
+            label.AutoSize = true;
+            label2.Anchor = label2.Anchor | AnchorStyles.Right;
+            buttonOk.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            buttonCancel.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+
+            form.ClientSize = new Size(396, 107);
+            form.Controls.AddRange(new Control[] { label, label2, buttonOk, buttonCancel });
+            form.ClientSize = new Size(Math.Max(300, label.Right + 10), form.ClientSize.Height);
+            form.FormBorderStyle = FormBorderStyle.FixedDialog;
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.MinimizeBox = false;
+            form.MaximizeBox = false;
+            form.AcceptButton = buttonOk;
+            form.CancelButton = buttonCancel;
+
+            DialogResult dialogResult = form.ShowDialog();
+            return dialogResult;
+        }
     }
 }

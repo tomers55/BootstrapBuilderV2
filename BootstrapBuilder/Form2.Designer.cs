@@ -34,14 +34,16 @@
             this.pbMinimise = new System.Windows.Forms.PictureBox();
             this.pbClose = new System.Windows.Forms.PictureBox();
             this.pbMeximized = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.TopPanel.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimise)).BeginInit();
@@ -49,18 +51,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbMeximized)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // TopPanel
             // 
-            this.TopPanel.BackColor = System.Drawing.SystemColors.GrayText;
+            this.TopPanel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.TopPanel.Controls.Add(this.label1);
             this.TopPanel.Controls.Add(this.pictureBox1);
             this.TopPanel.Controls.Add(this.panel3);
-            this.TopPanel.Controls.Add(this.label1);
             this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.TopPanel.Location = new System.Drawing.Point(0, 0);
             this.TopPanel.Name = "TopPanel";
-            this.TopPanel.Size = new System.Drawing.Size(1403, 82);
+            this.TopPanel.Size = new System.Drawing.Size(1403, 26);
             this.TopPanel.TabIndex = 2;
             this.TopPanel.DoubleClick += new System.EventHandler(this.FullSizeWindow);
             this.TopPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TopPanel_MouseMove);
@@ -117,26 +121,73 @@
             this.pbMeximized.MouseLeave += new System.EventHandler(this.MouseControlersLeaveEvent);
             this.pbMeximized.MouseHover += new System.EventHandler(this.MouseControlersOverEvent);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label1.Location = new System.Drawing.Point(41, 1);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(156, 25);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "BootStrapBuilder";
+            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.SystemColors.Desktop;
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 631);
+            this.panel5.Location = new System.Drawing.Point(0, 637);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1403, 24);
+            this.panel5.Size = new System.Drawing.Size(1403, 18);
             this.panel5.TabIndex = 3;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel1.Controls.Add(this.webBrowser1);
+            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.listView1);
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 82);
+            this.panel1.Location = new System.Drawing.Point(0, 26);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1403, 549);
+            this.panel1.Size = new System.Drawing.Size(1403, 611);
             this.panel1.TabIndex = 4;
             this.panel1.DoubleClick += new System.EventHandler(this.FullSizeWindow);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::BootstrapBuilder.Properties.Resources.builder;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = global::BootstrapBuilder.Properties.Resources.rubbish_bin;
+            this.pictureBox3.Location = new System.Drawing.Point(442, 14);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox3.TabIndex = 5;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = global::BootstrapBuilder.Properties.Resources.add_new_document_1_;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 15);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(23, 23);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.NewProject);
             // 
             // listView1
             // 
@@ -152,6 +203,8 @@
             this.listView1.TabIndex = 2;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.SelectedIndexChanged);
+            this.listView1.Click += new System.EventHandler(this.ShowPreview);
             this.listView1.DoubleClick += new System.EventHandler(this.SelectedListViewValue);
             // 
             // columnHeader1
@@ -164,36 +217,14 @@
             this.columnHeader2.Text = "Dated";
             this.columnHeader2.Width = 120;
             // 
-            // button1
+            // webBrowser1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 15);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 22);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Add New Project";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.NewProject);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::BootstrapBuilder.Properties.Resources.speed32;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(30, -4);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(177, 30);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "BootStrapBuilder";
+            this.webBrowser1.Location = new System.Drawing.Point(488, 43);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(893, 549);
+            this.webBrowser1.TabIndex = 6;
+            this.webBrowser1.Visible = false;
             // 
             // Form2
             // 
@@ -214,7 +245,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMeximized)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -228,11 +262,13 @@
         private System.Windows.Forms.PictureBox pbMeximized;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.WebBrowser webBrowser1;
     }
 }

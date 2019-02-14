@@ -33,8 +33,10 @@ namespace BootstrapBuilder
         public Form1(string PName, string PTamplate)
         {            
             InitializeComponent();
+            lblProjectName.Text = PName;
             LocalProjectName = PName;
             LocalHtmlPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + @"\Projects\" + LocalProjectName + @"\index.Html";
+            EditHtml.RefreshBrowser(LocalHtmlPath, webBrowser1);
         }
 
         public void RunHtml_Click(object sender, EventArgs e)
@@ -96,8 +98,7 @@ namespace BootstrapBuilder
             catch(Exception ex)
             {
                 Dialog.Msg(ex.Message.ToString());
-            }
-            
+            }          
         }
         //-----------------Events-------------------------------------------------------------
         private void MinimiseWindow(object sender, EventArgs e)
@@ -149,7 +150,13 @@ namespace BootstrapBuilder
             p.BackColor = Color.FromArgb(0, 33, 65);
         }
 
-
+        private void EditTitle_OnClick(object sender, EventArgs e)
+        {
+            string Title = EditHtml.GetTitle(LocalHtmlPath);
+            Dialog.InputBox("Edit Title","Enter Title:",ref Title);
+            EditHtml.EditTitle(Title, LocalHtmlPath);
+            EditHtml.RefreshBrowser(LocalHtmlPath, webBrowser1);
+        }
     }
 }
 //icons: https://www.flaticon.com/search?word=line

@@ -62,10 +62,12 @@ namespace BootstrapBuilder
         public static void GetAllProjects(ListView lv)
         {
             string ProjectsFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + @"\Projects\";
+
             foreach (string s in Directory.GetDirectories(ProjectsFolder))
             {
+                DateTime dt = Directory.GetCreationTime(s);
                 ListViewItem item = new ListViewItem(s.Remove(0, ProjectsFolder.Length));
-                item.SubItems.Add(DateTime.Now.ToString());
+                item.SubItems.Add(dt.ToString());
                 lv.Items.Add(item);
             }
         }        
